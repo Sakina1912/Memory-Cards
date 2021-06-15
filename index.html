@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Memory Card</title>
+</head>
+<body>
+    <button class="btn clear" id="clear">
+        <i class="fas fa-trash"></i> Clear Cards
+    </button>
+    <h1>Memory Cards 
+        <button class="btn btn-add" id="btn-add">
+            <i class="fas fa-plus"></i>Add New Cards
+        </button>
+    </h1>
+    <div class="cards-container" id="cards-container">
+        <!-- <div class="card active">
+            <div class="inner-card">
+                <div class="inner-card-front">
+                    <p>What is JavaScript?</p>
+                </div>
+                <div class="inner-card-back">
+                    <p>It is a Programming Language</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="card">
+            <div class="inner-card">
+                <div class="inner-card-front">
+                    <p>What is HTML used for?</p>
+                </div>
+                <div class="inner-card-back">
+                    <p>It is used for creating web pages</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="navigation" id="navigation">
+        <button class="nav-btn" id="btn-prev">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <p id="page"></p>
+        <button class="nav-btn" id="btn-next">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="add-container" id="add-container">
+        <h1>Add New Card <button class="btn btn-close" id="btn-close"><i class="fas fa-times"></i></button></h1>
+        <div class="form">
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Enter your question..."></textarea>
+        </div>
+        <div class="form">
+            <label for="answer">Answer</label>
+            <textarea id="answer" placeholder="Enter your answer..."></textarea>
+        </div>
+        <button class="btn" id="form-add"><i class="fas fa-plus"></i>Add New Cards</button>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
